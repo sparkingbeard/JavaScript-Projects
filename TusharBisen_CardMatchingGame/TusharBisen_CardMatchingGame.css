@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(180deg, #0C1431, #1B2B50);
+    height: 100%;
+    font-family: Arial, sans-serif;
+
+}
+
+.gameLogo {
+   text-align: center;
+    color: #FFD700;
+    letter-spacing: 3px;
+    font-size: 8vh;
+    margin: 30px 0;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.inputBody {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#inputCards{
+    height: 4vh;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+#startBtn {
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #FFD700;
+    color: #0C1431;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+#startBtn:hover {
+    transform: translateY(-3px);
+    background: #ffce00;
+}
+
+#gridContainer {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.card {
+    width: 60px;
+    height: 80px;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card.flipped {
+    background: #4caf50;
+}
+
+.card.matched {
+    background: #999;
+    cursor: default;
+}
+
+.restartContainer{
+ margin-top: 5vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+}
+
+#restartBtn {
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #FFD700;
+    color: #0C1431;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    display: none;
+    transition: transform 0.3s, background 0.3s;
+}
+
+#restartBtn:hover {
+    transform: translateY(-3px);
+    background: #ffce00;
+}
